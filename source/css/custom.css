@@ -1,0 +1,104 @@
+/* Utility class */
+.space{
+  height: 300px;
+}
+.space_lf{
+  margin-left: 50px;
+}
+
+/* .ICENTARL */
+.content_here{
+  height: 860px;
+  background: #2B64B5;
+}
+.logo_text{
+  font-size: 16px;
+  color: #8338ec;
+}
+
+/* Animation Class for ::content */
+/***** Global Style *****/
+*{
+  font-family: Play;
+}
+p{
+  font-size: 20px;
+  color: #444;
+}
+
+/***** Global Slide *****/
+.slide-right, .slide-left {
+  width: 100%;
+}
+
+/***** Slide Right *****/
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Slide Left *****/
+.slide-left {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Misc Styles *****/
+.container {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+  margin-top: 30px;
+  text-align: center;
+}
+.container p{
+  color: #fff !important;
+}
+body {
+  background: #e2e2e2;
+}
+
+/***** FadeIn Underline *****/
+.line {
+  border-bottom: 3px solid #0069ff;
+  width: 200px;
+  margin: auto;
+}
+.fade-in {
+  animation: fadeIn ease 3s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+/* Nav Class */
+.ftco-navbar-light .navbar-nav > .nav-item.active > a:before{
+  background-color: #8338ec !important;
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before{
+  background-color: #8338ec !important;
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:before{
+  background-color: #8338ec !important;
+}
